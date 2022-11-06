@@ -6,6 +6,7 @@
 
 [profiles]
   [[default]]
+    scrollbar_position = disabled
     palette = "#292929:#cf6a4c:#ff8dc7:#fad07a:#8197bf:#8787af:#668799:#888888:#95d5ee:#ff9d80:#ffe691:#ffefbf:#accaff:#c4c4ff:#80bfaf:#e8e8d3"
     foreground_color = "#ffbae4"
     background_color = "#585872"
