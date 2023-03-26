@@ -136,6 +136,10 @@ require('lazy').setup({
     '42Paris/42header'
   },
 
+  { -- Code snippets
+    "rafamadriz/friendly-snippets"
+  },
+
   { -- Add indentation guides even on blank lines
     'lukas-reineke/indent-blankline.nvim',
     -- Enable `lukas-reineke/indent-blankline.nvim`
@@ -262,7 +266,6 @@ vim.cmd [[highlight IndentBlanklineIndent3 guifg=#98C379 gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent4 guifg=#56B6C2 gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent5 guifg=#61AFEF gui=nocombine]]
 vim.cmd [[highlight IndentBlanklineIndent6 guifg=#C678DD gui=nocombine]]
-
 vim.opt.list = true
 
 require("indent_blankline").setup {
@@ -481,6 +484,7 @@ local cmp = require 'cmp'
 local luasnip = require 'luasnip'
 
 luasnip.config.setup {}
+require("luasnip.loaders.from_vscode").lazy_load()
 
 cmp.setup {
   snippet = {
