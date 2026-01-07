@@ -1,0 +1,5 @@
+" Use space as leader
+let g:mapleader = " "
+
+" Normal mode: leader + r -> start Debug (same as Shift+F9)
+nnoremap <leader>r :action Debug<CR>
